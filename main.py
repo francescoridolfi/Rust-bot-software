@@ -1,5 +1,6 @@
 import os
 
-print('||||||||||||||||||||||')
-print('|  Rust-Bot-Software |')
-print('||||||||||||||||||||||')
+print('+--------------------+')
+print('|  RustBot-Software  |')
+print('|   Liceo Democrito  |')
+print('+--------------------+')
