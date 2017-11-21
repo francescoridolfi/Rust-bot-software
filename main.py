@@ -8,9 +8,16 @@ print("""
                                     
 """)
 
+<<<<<<< HEAD
 
 print('Loading plugins: ')
 plugins = plm.load("plugins")
 
 if(plugins != {}):
     print("No plugins found!")
+=======
+print('+--------------------+')
+print('|  RustBot-Software  |')
+print('|   Liceo Democrito  |')
+print('+--------------------+')
+>>>>>>> 8a0eb1cf09d5f4bc2eda3e6518f206f853037cc2
