@@ -20,4 +20,3 @@ print('+--------------------+')
 print('|  RustBot-Software  |')
 print('|   Liceo Democrito  |')
 print('+--------------------+')
->>>>>>> 8a0eb1cf09d5f4bc2eda3e6518f206f853037cc2
