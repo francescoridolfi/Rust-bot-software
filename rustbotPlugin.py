@@ -1,19 +1,22 @@
 import os, sys, ast
 
 class Manager():
-    def load(self,folder)
-        paths = os.listdir(folder)
+    path = "plugins"
+
+    def setpath(self, path):
+        self.path = path
+    
+    def load(self):
+        paths = os.listdir(self.path)
         plugins = []
         for file in paths:
             if(file.endswith(".rbp")):
                 plugins.append(file)
 
-        sys.path.insert(0, folder)
-
         info = {}
         
         for plugin in plugins:
-            f = open(plugin,"r")
+            f = open(self.path+"/"+plugin,"r")
             pl = f.read()
             f.close()
 
@@ -21,6 +24,17 @@ class Manager():
 
             info[plugin] = pl
         return info
+
+    def cmd(self, plugin, cmd):
+        plugins = self.load()
+        main = plugins[plugin]["main"]
+        sys.path.insert(0,self.path)
+
+        pl = __import__(main)
+        
+        return pl.commandExec(cmd)
+        
+        
             
             
             

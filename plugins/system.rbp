@@ -1,0 +1,1 @@
+{"name":"SystemPlugin","desc":"An essentials plugins for the frequent commands","main":"system","version":"1.0","author":"Ridolfino","events":[],"commands":["Hello","What's your name?","Save me"]}
