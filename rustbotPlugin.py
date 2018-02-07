@@ -1,7 +1,7 @@
 import os, sys, ast
 
 class Manager():
-    path = "plugins"
+
 
     def setpath(self, path):
         self.path = path
