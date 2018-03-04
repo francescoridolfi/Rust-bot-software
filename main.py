@@ -17,11 +17,11 @@ def start():
                                         
     """)
 
-    plm = rustbotPlugin.Manager
+    plm = rustbotPlugin.Manager()
     print("==================")
     print('Loading plugins: ')
-    plm().setpath("plugins")
-    plugins = plm().load()
+    plm.setpath("plugins")
+    plugins = plm.load()
 
     if(plugins == {}):
         print("No plugins found!")
@@ -49,7 +49,7 @@ def start():
             
         pl = cmdInPlugin(msg, plugins)
         if(pl != None):
-            res=plm().cmd(pl,msg)
+            res=plm.cmd(pl,msg)
             print(res)
 
 start()
